@@ -1,6 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
 import { between } from 'polished'
+import styled from 'styled-components'
 
 import NavBar from './NavBar'
 
@@ -30,9 +30,10 @@ const Title = styled.h1`
   top: 40%;
   left: 5%;
   margin: 0;
-  max-width: ${between('300px', '780px', '400px', '1200px')};
-  font-size: ${between('32px', '79px', '400px', '1200px')};
-  line-height: ${between('25px', '60px', '400px', '1200px')};
+  max-width: ${between('300px', '780px', '600px', '1900px')};
+  font-size: ${between('32px', '79px', '600px', '1900px')};
+  line-height: ${between('25px', '60px', '600px', '1900px')};
+  font-weight: 400;
   color: #7BA0C4;
   
 `

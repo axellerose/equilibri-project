@@ -1,4 +1,5 @@
 import React from 'react'
+import { between } from 'polished'
 import styled from 'styled-components'
 
 import logo from '../assets/logo.png'
@@ -22,11 +23,12 @@ const Navigation = styled.ul`
   list-style: none;
   
   li {
-    padding: 0 10px;
+    padding: 0 25px;
 
     a {
       text-decoration: none;
       color: #808080;
+      font-size: ${between('12px', '16px', '600px', '1900px')};
     }
   }
 `
