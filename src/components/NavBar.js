@@ -5,8 +5,8 @@ import styled from 'styled-components'
 import logo from '../assets/logo.png'
 
 const Wrapper = styled.div`
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   position: absolute;
   top: 60px;
   left: 80px;
@@ -24,11 +24,12 @@ const Navigation = styled.ul`
   
   li {
     padding: 0 25px;
+    font-size: ${between('18px', '32px', '600px', '2560px')};
 
     a {
       text-decoration: none;
       color: #808080;
-      font-size: ${between('12px', '16px', '600px', '1900px')};
+      
     }
   }
 `

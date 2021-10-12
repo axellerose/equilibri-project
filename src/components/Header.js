@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 `
 
 const Hero = styled.div`
-position: relative;
+  position: relative;
   width: 100%;
   height: 100%;
   background-image: url(${background});
@@ -28,7 +28,7 @@ position: relative;
 const Title = styled.h1`
   position: absolute;
   top: 40%;
-  left: 5%;
+  left: 75px;
   margin: 0;
   max-width: ${between('300px', '780px', '600px', '1900px')};
   font-size: ${between('32px', '79px', '600px', '1900px')};
