@@ -13,10 +13,18 @@ const Wrapper = styled.div`
   top: 60px;
   left: 80px;
   right: 80px;
+
+  ${down.sm`
+    top: 35px;
+    left: 25px;
+    right: 25px;
+  `}
 `
 
 const Logo = styled.img`
-  // TODO : responsive for small screens
+  ${down.sm`
+    width: 150px;
+  `}
 `
 
 const Navigation = styled.ul`

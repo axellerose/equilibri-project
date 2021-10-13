@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import NavBar from './NavBar'
 
 import background from '../assets/background.png'
-import { up } from '../mixins'
+import { up, down } from '../mixins'
 
 const Wrapper = styled.div`
   max-width: 100%;
@@ -19,6 +19,10 @@ const Wrapper = styled.div`
   `}
   ${up.xl`
     height: 45vh;
+  `}
+
+  ${down.sm`
+    height: 40vh;
   `}
 `
 
@@ -52,6 +56,15 @@ const Title = styled.div`
 
   ${up.lg`
     top: 40%;
+  `}
+
+  ${down.sm`
+    max-width: 60%;
+    left: 20px;
+
+    & h1 {
+      line-height: 28px;
+    }
   `}
 `
 
