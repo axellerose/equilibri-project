@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import styled from 'styled-components'
 
-function App() {
+import AboutUs from './components/AboutUs'
+import ContactUs from './components/ContactUs'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Services from './components/Services'
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  @font-face {
+    font-family: 'Baloo 2';
+    src: url('./fonts/Baloo2-Regular.ttf');
+  }
+  font-family: 'Baloo 2';
+  background-color: #fffffe;
+
+`
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Wrapper>
+      <Header />
+      <Services />
+      <AboutUs />
+      <ContactUs />
+      <Footer />
+    </Wrapper>
+  )
 }
 
-export default App;
+export default App
