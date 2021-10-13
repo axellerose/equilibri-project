@@ -96,10 +96,6 @@ const StyledForm = styled.form`
       width: 50%;
     `}
 
-    @font-face {
-    font-family: 'Baloo 2';
-    src: url('../fonts/Baloo2-Regular.ttf');
-    }
     color: #808080;
     /* ${up.sm`
         width: 50%;
@@ -140,10 +136,6 @@ const StyledForm = styled.form`
         } */
     }
     & textarea {
-      @font-face {
-      font-family: 'Baloo 2';
-      src: url('../fonts/Baloo2-Regular.ttf');
-      }
       width: 100%;
       border: 0.25px solid #808080;
       border-radius: 10px;

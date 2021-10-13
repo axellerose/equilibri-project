@@ -10,13 +10,8 @@ import Services from './components/Services'
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  @font-face {
-    font-family: 'Baloo 2';
-    src: url('./fonts/Baloo2-Regular.ttf');
-  }
-  font-family: 'Baloo 2';
   background-color: #fffffe;
-
+  font-family: 'Baloo 2';
 `
 
 const App = () => {
