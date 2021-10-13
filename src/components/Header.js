@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   height: 25vh;
 
   ${up.md`
-    height: 35vh;
+    height: 33vh;
   `}
   ${up.lg`
     height: 40vh;
@@ -36,17 +36,30 @@ const Hero = styled.div`
   }
 `
 
-const Title = styled.h1`
+const Title = styled.div`
+
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 75px;
   margin: 0;
   max-width: ${between('300px', '780px', '600px', '1900px')};
-  font-size: ${between('32px', '79px', '600px', '1900px')};
-  line-height: ${between('25px', '60px', '600px', '1900px')};
-  font-weight: 400;
-  color: #7BA0C4;
-  
+  & h1 {
+    font-size: ${between('32px', '79px', '600px', '1900px')};
+    line-height: ${between('25px', '79px', '600px', '1900px')};
+    font-weight: 400;
+    color: #7BA0C4;
+  }
+
+  ${up.lg`
+    top: 40%;
+  `}
+`
+
+const Spacer = styled.div`
+  color:  #7BA0C4;
+  border-bottom: 2px solid  #7BA0C4;
+  padding-top: ${between('32px', '50px', '600px', '1900px')};
+  width: 25%;
 `
 
 const Header = () => {
@@ -54,8 +67,12 @@ const Header = () => {
     <Wrapper>
       <Hero>
         <Title>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+          <h1>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+          </h1>
+          <Spacer />
         </Title>
+
       </Hero>
       <NavBar />
 
