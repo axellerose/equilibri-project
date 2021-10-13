@@ -15,7 +15,7 @@ const USER_ID = "user_jZrXi2I6JqNGUNyQZzy8N"
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 75px;
+  padding: 0 75px 75px 75px;
 `
 
 const Container = styled.div`
