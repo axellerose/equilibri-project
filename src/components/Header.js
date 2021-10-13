@@ -9,13 +9,13 @@ import { up, down } from '../mixins'
 
 const Wrapper = styled.div`
   max-width: 100%;
-  height: 25vh;
+  height: 50vh;
 
   ${up.md`
-    height: 33vh;
+    height: 50vh;
   `}
   ${up.lg`
-    height: 40vh;
+    height: 60vh;
   `}
   ${up.xl`
     height: 45vh;
