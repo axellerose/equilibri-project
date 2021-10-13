@@ -37,6 +37,8 @@ width: ${between('140px', '450px', '600px', '2560px')};
 
     & .service__text {
       padding-left: 25px;
+      width: 60%;
+      margin: 0 auto;
     }
 
     &.even {
