@@ -5,10 +5,21 @@ import styled from 'styled-components'
 import NavBar from './NavBar'
 
 import background from '../assets/background.png'
+import { up } from '../mixins'
 
 const Wrapper = styled.div`
   max-width: 100%;
-  height: 60vh;
+  height: 25vh;
+
+  ${up.md`
+    height: 35vh;
+  `}
+  ${up.lg`
+    height: 40vh;
+  `}
+  ${up.xl`
+    height: 45vh;
+  `}
 `
 
 const Hero = styled.div`
