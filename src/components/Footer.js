@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { down } from '../mixins'
 
 const StyledFooter = styled.div`
   display: flex;
@@ -9,6 +10,11 @@ const StyledFooter = styled.div`
   background-color: #808080;
   color: #fffffe;
   padding: 15px 75px;
+  font-size: 12px;
+
+  ${down.sm`
+    padding: 10px 20px;
+  `}
 `
 
 const Footer = () => {
