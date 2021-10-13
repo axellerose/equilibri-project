@@ -72,7 +72,6 @@ const Header = () => {
           </h1>
           <Spacer />
         </Title>
-
       </Hero>
       <NavBar />
 

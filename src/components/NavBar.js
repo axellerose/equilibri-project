@@ -3,6 +3,8 @@ import { between } from 'polished'
 import styled from 'styled-components'
 
 import logo from '../assets/logo.png'
+import { MobileMenu } from './MobileMenu'
+import { down } from '../mixins'
 
 const Wrapper = styled.div`
   display: flex;
@@ -32,12 +34,17 @@ const Navigation = styled.ul`
       
     }
   }
+
+  ${down.sm`
+    display: none;
+  `}
 `
 
 const NavBar = () => {
   return (
     <Wrapper>
       <Logo src={logo} />
+      <MobileMenu />
       <Navigation>
         <li>
           <a href="#about-us">Sobre nosaltres</a>
