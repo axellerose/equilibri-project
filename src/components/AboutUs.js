@@ -1,6 +1,7 @@
 import React from 'react'
 import { between } from 'polished'
 import styled from 'styled-components'
+import { down } from '../mixins'
 
 
 const Wrapper = styled.div`
@@ -11,13 +12,20 @@ const Wrapper = styled.div`
   padding: 50px 75px;
   color: #fff;
   background-color: #7BA0C4;
+  ${down.sm`
+    padding: 50px 20px;
+  `}
 `
 
 const Title = styled.h1`
-  width: 35%;
+  width: 40%;
   margin: 0;
   font-size: ${between('42px', '96px', '600px', '2560px')};
   font-weight: 400;
+
+  ${down.sm`
+    font-size: 32px;
+  `}
 `
 
 const Text = styled.div`
