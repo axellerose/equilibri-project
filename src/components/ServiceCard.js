@@ -76,6 +76,7 @@ width: ${between('140px', '450px', '600px', '2560px')};
       & .service__text {
         padding-left: 0;
         padding-right: 0;
+        width: 80%;
       }
     }
     &.odd {
@@ -83,6 +84,7 @@ width: ${between('140px', '450px', '600px', '2560px')};
       & .service__text {
         padding-left: 0;
         padding-right: 0;
+        width: 80%;
       }
     }
   `}
