@@ -97,17 +97,18 @@ const StyledForm = styled.form`
       width: 100%;
     `}
     }
-    input {
+    & input {
         width: 100%;
         height: 42px;
         border: 1px solid #808080;
         border-radius: 10px;
         padding: 0 10px;
+        color: #808080;
         /* &::placeholder {
             font-size: 0.8em;
         } */
     }
-    textarea {
+    & textarea {
       @font-face {
       font-family: 'Baloo 2';
       src: url('../fonts/Baloo2-Regular.ttf');
@@ -116,19 +117,51 @@ const StyledForm = styled.form`
       border: 0.25px solid #808080;
       border-radius: 10px;
       padding: 10px;
+      color: #808080;
       
     }
     
-    label {
+    & label {
 
         width: 35%;
         white-space: nowrap;
     }
-    button {
-        margin-top: 20px;
-    }
+
 `
 
+const StyledButton = styled.button`
+  margin-top: 25px;
+  padding: 15px 30px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fffffe;
+  background-color: #7BA0C4;
+`
+
+const StyledCheckbox = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+
+  & input {
+    width: 15px;
+    height: 15px;
+
+    
+  }
+
+  & p {
+    padding-left: 15px;
+    font-size: 10px;
+    line-height: 18px;
+
+    ${up.md`
+      font-size: 14px;
+    `}
+  }
+`
 
 const ContactUs = () => {
 
@@ -230,7 +263,6 @@ const ContactUs = () => {
               name="email"
               value={template.email}
               onChange={changeHandler}
-              required
             />
           </div>
           <div className="form__control">
@@ -240,6 +272,7 @@ const ContactUs = () => {
               name="phone"
               value={template.phone}
               onChange={changeHandler}
+              required
             />
           </div>
           <div className="form__control">
@@ -262,10 +295,17 @@ const ContactUs = () => {
               onChange={changeHandler}
             />
           </div>
-          <div>
-            <button>Send</button>
+          <div style={{ width: '100%' }}>
+            <StyledButton type="submit">Enviar</StyledButton>
           </div>
-
+          <StyledCheckbox>
+            <input type="checkbox" />
+            <p>Nota Legal</p>
+          </StyledCheckbox>
+          <StyledCheckbox>
+            <input type="checkbox" />
+            <p>He llegit i accepto la política de privacitat</p>
+          </StyledCheckbox>
         </StyledForm>
       </Container>
     </Wrapper>
