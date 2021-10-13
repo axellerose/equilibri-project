@@ -8,7 +8,7 @@ import background from '../assets/background.png'
 
 const Wrapper = styled.div`
   max-width: 100%;
-  height: 75vh;
+  height: 60vh;
 `
 
 const Hero = styled.div`

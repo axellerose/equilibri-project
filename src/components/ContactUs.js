@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import emailjs from 'emailjs-com'
 
-import { up } from '../mixins'
+import { up, down } from '../mixins'
 import { between } from 'polished'
 
 const SERVICE_ID = "service_mbnbpk5"
@@ -20,7 +20,11 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   display: flex;
-  
+  justify-content: space-between;
+
+  ${up.lg`
+    justify-content: flex-start;
+  `}
 `
 
 const Title = styled.h1`
@@ -54,11 +58,19 @@ const StyledForm = styled.form`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     width: 66%;
     background-color: rgba(255,255,255, 0.15);
     border-radius: 10px;
+
+    ${down.md`
+      flex-direction: column;
+    `}
+
+    ${up.lg`
+    width: 50%;
+    `}
 
     @font-face {
     font-family: 'Baloo 2';
@@ -75,16 +87,20 @@ const StyledForm = styled.form`
 
     }
     .form__control {
-      width: 45%;
+      width: 40%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 5px 20px;
+      padding: 5px 0px;
+
+      ${down.md`
+      width: 100%;
+    `}
     }
     input {
-        width: 356px;
+        width: 100%;
         height: 42px;
-        border: 0.25px solid #808080;
+        border: 1px solid #808080;
         border-radius: 10px;
         padding: 0 10px;
         /* &::placeholder {
@@ -100,6 +116,7 @@ const StyledForm = styled.form`
       border: 0.25px solid #808080;
       border-radius: 10px;
       padding: 10px;
+      
     }
     
     label {

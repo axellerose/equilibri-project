@@ -24,7 +24,7 @@ const Navigation = styled.ul`
   
   li {
     padding: 0 25px;
-    font-size: ${between('18px', '32px', '600px', '2560px')};
+    font-size: ${between('18px', '26px', '600px', '2560px')};
 
     a {
       text-decoration: none;
