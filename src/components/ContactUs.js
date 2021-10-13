@@ -16,6 +16,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 75px 75px 75px;
+
+  ${down.sm`
+    padding: 0 30px 20px 20px;
+  `}
 `
 
 const Container = styled.div`
@@ -24,6 +28,11 @@ const Container = styled.div`
 
   ${up.lg`
     justify-content: flex-start;
+  `}
+
+  ${down.sm`
+    flex-direction: column;
+    justify-content: center;
   `}
 `
 
@@ -51,6 +60,11 @@ width: 33%;
     line-height: ${between('18px', '24px', '600px', '2560px')};
     color: #808080;
   }
+
+  ${down.sm`
+    width: 100%;
+
+  `}
 `
 
 const StyledForm = styled.form`
@@ -68,8 +82,18 @@ const StyledForm = styled.form`
       flex-direction: column;
     `}
 
+    ${down.sm`
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+      padding-top: 25px;
+      padding-left: 0;
+      width: 75%;
+      flex-wrap: no-wrap;
+    `}
+
     ${up.lg`
-    width: 50%;
+      width: 50%;
     `}
 
     @font-face {
@@ -94,8 +118,11 @@ const StyledForm = styled.form`
       padding: 5px 0px;
 
       ${down.md`
-      width: 100%;
-    `}
+        width: 100%;
+      `}
+      ${down.sm`
+        width: 100%;
+      `}
     }
     & input {
         width: 100%;
@@ -104,6 +131,10 @@ const StyledForm = styled.form`
         border-radius: 10px;
         padding: 0 10px;
         color: #808080;
+
+        ${down.sm`
+          max-width: 100%;
+        `}
         /* &::placeholder {
             font-size: 0.8em;
         } */
@@ -122,7 +153,6 @@ const StyledForm = styled.form`
     }
     
     & label {
-
         width: 35%;
         white-space: nowrap;
     }
@@ -148,8 +178,6 @@ const StyledCheckbox = styled.div`
   & input {
     width: 15px;
     height: 15px;
-
-    
   }
 
   & p {
