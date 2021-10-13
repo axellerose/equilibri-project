@@ -59,7 +59,7 @@ width: ${between('140px', '450px', '600px', '2560px')};
 
     & img {
       height: 150px;
-      width: 150px;
+      width: 240px;
     }
 
     & .service__image, service__text {
