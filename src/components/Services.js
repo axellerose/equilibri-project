@@ -34,7 +34,7 @@ width: 100%;
 
 const Services = () => {
   return (
-    <Wrapper>
+    <Wrapper id="services">
       <Title>
         Serveis
       </Title>

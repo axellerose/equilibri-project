@@ -34,7 +34,7 @@ const Text = styled.div`
 
 const AboutUs = () => {
   return (
-    <Wrapper>
+    <Wrapper id="about-us">
       <Title>
         Qui som
       </Title>

@@ -39,7 +39,9 @@ width: 33%;
     list-style: none;
     padding-left: 0;
   }
-
+  li {
+    padding-top: 20px;
+  }
   p {
     font-size: ${between('18px', '24px', '600px', '2560px')};
     line-height: ${between('18px', '24px', '600px', '2560px')};
@@ -153,7 +155,7 @@ const ContactUs = () => {
   }
 
   return (
-    <Wrapper>
+    <Wrapper id="contact-us">
       <Title>
         Contacte
       </Title>
