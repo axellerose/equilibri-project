@@ -37,6 +37,8 @@ width: ${between('140px', '450px', '600px', '2560px')};
 
     & .service__text {
       padding-left: 25px;
+      width: 60%;
+      margin: 0 auto;
     }
 
     &.even {
@@ -54,16 +56,16 @@ width: ${between('140px', '450px', '600px', '2560px')};
     display: flex;
     flex-diretion: column;
     justify-content: center;
-    
+
     padding-bottom: 25px; 
 
     & img {
       height: 150px;
       width: 240px;
+      padding-bottom: 15px;
     }
 
     & .service__image, service__text {
-      padding-top: 10px;
       padding-left: 0;
       padding-right: 0;
       margin: 0 auto;
@@ -74,6 +76,7 @@ width: ${between('140px', '450px', '600px', '2560px')};
       & .service__text {
         padding-left: 0;
         padding-right: 0;
+        width: 80%;
       }
     }
     &.odd {
@@ -81,6 +84,7 @@ width: ${between('140px', '450px', '600px', '2560px')};
       & .service__text {
         padding-left: 0;
         padding-right: 0;
+        width: 80%;
       }
     }
   `}

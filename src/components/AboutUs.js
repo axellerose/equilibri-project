@@ -29,7 +29,7 @@ const Title = styled.h1`
 `
 
 const Text = styled.div`
-  width: 65%;
+  width: 50%;
   padding-right: 25px;
   h3 {
     font-size: ${between('16px', '22px', '600px', '2560px')};
@@ -38,6 +38,11 @@ const Text = styled.div`
   p {
     font-size: ${between('14px', '20px', '600px', '2560px')};
   }
+
+  ${down.sm`
+    padding-left: 15px;
+    
+  `}
 `
 
 const AboutUs = () => {
