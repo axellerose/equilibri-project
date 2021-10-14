@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #fffffe;
-  font-family: 'Baloo 2';
+  font-family: 'Baloo 2', cursive;
 `
 
 const App = () => {
